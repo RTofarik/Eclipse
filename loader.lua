@@ -219,7 +219,7 @@ local script = G2L["7"];
 	wait(0.3)
 	twnclipz:Play()
 	wait(1)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/RTofarik/Eclipse/refs/heads/main/main.txt?token=GHSAT0AAAAAADAAGMVO2Y62YUULUJJUWBSGZ6OTJLQ"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RTofarik/Eclipse/refs/heads/main/main.txt"))()
 	wait(0.1)
 	script.Parent.Parent.Parent:Destroy()
 end;
