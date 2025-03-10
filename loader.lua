@@ -219,7 +219,11 @@ local script = G2L["7"];
 	wait(0.3)
 	twnclipz:Play()
 	wait(1)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/RTofarik/Eclipse/refs/heads/main/main.txt"))()
+	if game.Players.LocalPlayer.Character.Unikal then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RTofarik/Eclipse/refs/heads/main/main.txt"))()
+	else
+		print("ANTI-Crack System, crack detected! Go home dude!")
+	end
 	wait(0.1)
 	script.Parent.Parent.Parent:Destroy()
 end;
