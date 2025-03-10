@@ -14,7 +14,7 @@ local G2L = {};
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["IgnoreGuiInset"] = true;
 G2L["1"]["DisplayOrder"] = 5000;
-G2L["1"]["Enabled"] = true;
+G2L["1"]["Enabled"] = false;
 G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
 G2L["1"]["Name"] = [[Loader]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
@@ -218,6 +218,10 @@ local script = G2L["7"];
 	twnletter:Play()
 	wait(0.3)
 	twnclipz:Play()
+	wait(1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RTofarik/Eclipse/refs/heads/main/main.txt?token=GHSAT0AAAAAADAAGMVO2Y62YUULUJJUWBSGZ6OTJLQ"))()
+	wait(0.1)
+	script.Parent.Parent.Parent:Destroy()
 end;
 task.spawn(C_7);
 -- StarterGui.Loader.MainLoader.LetterE.FadeAndFade
